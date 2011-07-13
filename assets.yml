@@ -1,0 +1,14 @@
+# These JavaScript files will be minified ...
+javascripts:
+  - public/jquery-1.6.1.js
+  - public/underscore.js
+  - public/backbone.js
+
+outputjs: public/libs.js
+
+# And combined into a single file
+
+# These files will be documented with docco
+document:
+  - web.rb
+  - views/app.coffee

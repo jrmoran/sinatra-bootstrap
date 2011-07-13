@@ -1,0 +1,27 @@
+!!! 5
+%html
+  %head
+    %title Sinatra App
+    %link{ :rel=> 'stylesheet', :href => sass_v('style'),
+           :type => 'text/css', :media => 'all' }
+  %body
+
+    .container
+      #header
+        %h1
+          Sinatra App
+
+      %div
+        = @obj
+
+    -# Development
+    -if @env_dev
+      %script{:src => 'jquery-1.6.1.js'}
+      %script{:src => 'underscore.js'}
+      %script{:src => 'backbone.js' }
+    -else
+      -# Production
+      %script{:src => js_v('libs')}
+
+    -# Loading Application 
+    %script{ :src=> coffee_v('app') }
