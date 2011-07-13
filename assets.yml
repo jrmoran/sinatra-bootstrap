@@ -4,9 +4,8 @@ javascripts:
   - public/underscore.js
   - public/backbone.js
 
+# And combined into this single file
 outputjs: public/libs.js
-
-# And combined into a single file
 
 # These files will be documented with docco
 document:
